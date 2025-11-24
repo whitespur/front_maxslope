@@ -5,9 +5,10 @@ interface FilterBarProps {
   slopes: string[];
   selectedSlope: string | null;
   onSelectSlope: (slope: string | null) => void;
+  allLabel: string;
 }
 
-const FilterBar: React.FC<FilterBarProps> = ({ slopes, selectedSlope, onSelectSlope }) => {
+const FilterBar: React.FC<FilterBarProps> = ({ slopes, selectedSlope, onSelectSlope, allLabel }) => {
   return (
     <div className="sticky top-0 z-40 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 py-4 mb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,7 +21,7 @@ const FilterBar: React.FC<FilterBarProps> = ({ slopes, selectedSlope, onSelectSl
                 : 'bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-600 hover:text-slate-200'
             }`}
           >
-            All
+            {allLabel}
           </button>
           
           {slopes.map((slope) => (

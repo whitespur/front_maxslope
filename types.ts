@@ -11,6 +11,15 @@ export interface Entity {
   github: string | null;
   podcast: string | null;
   intro_zh: string;
+  intro_en: string;
 }
 
 export type SlopeCategory = string;
+
+export interface TimelineChapter {
+  id: number;
+  title: string;
+  description: string; // The "Mom Science" part
+  imageUrl: string | null;
+  category: 'universe' | 'life' | 'civilization' | 'tech';
+}

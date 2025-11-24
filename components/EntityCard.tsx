@@ -5,9 +5,10 @@ import { Entity } from '../types';
 interface EntityCardProps {
   entity: Entity;
   onSlopeClick: (slope: string) => void;
+  lang: 'en' | 'zh';
 }
 
-const EntityCard: React.FC<EntityCardProps> = ({ entity, onSlopeClick }) => {
+const EntityCard: React.FC<EntityCardProps> = ({ entity, onSlopeClick, lang }) => {
   return (
     <div className="group relative flex flex-col bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-xl p-6 hover:border-slate-600 transition-all duration-300 hover:shadow-xl hover:shadow-blue-900/10 hover:-translate-y-1 overflow-hidden">
       
@@ -50,7 +51,7 @@ const EntityCard: React.FC<EntityCardProps> = ({ entity, onSlopeClick }) => {
         </div>
 
         <p className="text-slate-400 text-sm leading-relaxed mb-6 line-clamp-4">
-          {entity.intro_zh}
+          {lang === 'zh' ? entity.intro_zh : entity.intro_en}
         </p>
 
         <div className="flex flex-wrap gap-2 mb-6">

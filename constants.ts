@@ -1,5 +1,38 @@
 import { Entity } from './types';
 
+export const TRANSLATIONS = {
+  en: {
+    title: "High Slope Society",
+    subtitle: "Hang out with people maximizing their slope.",
+    description: "A curated index of individuals and companies maximizing trajectory in AI, Crypto, and Hard Tech.",
+    searchPlaceholder: "Search names, companies, or keywords...",
+    all: "All",
+    results: "Results",
+    result: "Result",
+    clearFilter: "Clear filter",
+    noResults: "No results found",
+    noResultsDesc: "Try adjusting your search or filter criteria.",
+    reset: "Reset all",
+    footer: "High Slope Society. Data provided by user.",
+    maximize: "Maximize your slope"
+  },
+  zh: {
+    title: "High Slope Society",
+    subtitle: "跟斜率最大化的人在一起。",
+    description: "收录在 AI、加密货币和硬科技领域最大化发展轨迹的个人和公司。",
+    searchPlaceholder: "搜索姓名、公司或关键词...",
+    all: "全部",
+    results: "个结果",
+    result: "个结果",
+    clearFilter: "清除筛选",
+    noResults: "未找到结果",
+    noResultsDesc: "尝试调整您的搜索或筛选条件。",
+    reset: "重置所有",
+    footer: "High Slope Society. 数据由用户提供。",
+    maximize: "最大化你的斜率"
+  }
+};
+
 export const ENTITIES: Entity[] = [
   {
     "id": "sam_altman",
@@ -13,7 +46,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "OpenAI 首席执行官，GPT 系列模型缔造者，全球 AGI 方向最具影响力的领导者，被视为推动“AI 氧气时代”加速前进的关键人物。"
+    "intro_zh": "OpenAI 首席执行官，GPT 系列模型缔造者，全球 AGI 方向最具影响力的领导者，被视为推动“AI 氧气时代”加速前进的关键人物。",
+    "intro_en": "CEO of OpenAI, creator of the GPT series, a leading figure in global AGI, considered the key person accelerating the 'AI Oxygen Era'."
   },
   {
     "id": "ilya_sutskever",
@@ -27,7 +61,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "OpenAI 联合创始人、前首席科学家，被认为是深度学习领域最重要的推动者之一，目前创立 Safe Superintelligence 致力于安全 AGI。"
+    "intro_zh": "OpenAI 联合创始人、前首席科学家，被认为是深度学习领域最重要的推动者之一，目前创立 Safe Superintelligence 致力于安全 AGI。",
+    "intro_en": "Co-founder and former Chief Scientist of OpenAI, considered one of the most important drivers of deep learning, now founding Safe Superintelligence dedicated to safe AGI."
   },
   {
     "id": "dario_amodei",
@@ -41,7 +76,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": "https://www.anthropic.com/news",
-    "intro_zh": "Anthropic 联合创始人兼 CEO，Claude 模型之父，推动以可控能力、安全性和长上下文为核心的新一代基础模型。"
+    "intro_zh": "Anthropic 联合创始人兼 CEO，Claude 模型之父，推动以可控能力、安全性和长上下文为核心的新一代基础模型。",
+    "intro_en": "Co-founder and CEO of Anthropic, father of the Claude model, pushing for new foundational models centered on steerability, safety, and long context."
   },
   {
     "id": "demis_hassabis",
@@ -55,7 +91,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@GoogleDeepMind",
     "github": null,
     "podcast": null,
-    "intro_zh": "DeepMind 创始人兼 CEO，AlphaGo、AlphaFold、Gemini 的核心推动者，在“AI × 科学突破”领域影响力巨大。"
+    "intro_zh": "DeepMind 创始人兼 CEO，AlphaGo、AlphaFold、Gemini 的核心推动者，在“AI × 科学突破”领域影响力巨大。",
+    "intro_en": "Founder and CEO of DeepMind, core driver of AlphaGo, AlphaFold, and Gemini, with immense influence in the 'AI × Science Breakthroughs' field."
   },
   {
     "id": "andrej_karpathy",
@@ -69,7 +106,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@AndrejKarpathy",
     "github": "https://github.com/karpathy",
     "podcast": null,
-    "intro_zh": "全球最具影响力的 AI 教学布道者，曾任 Tesla AI 总监，是解读 LLM、自动驾驶、AI 思维框架的最佳入口人物之一。"
+    "intro_zh": "全球最具影响力的 AI 教学布道者，曾任 Tesla AI 总监，是解读 LLM、自动驾驶、AI 思维框架的最佳入口人物之一。",
+    "intro_en": "The world's most influential AI educator, former Tesla AI Director, one of the best entry points for understanding LLMs, autonomous driving, and AI thinking frameworks."
   },
   {
     "id": "jensen_huang",
@@ -83,7 +121,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@NVIDIA",
     "github": null,
     "podcast": null,
-    "intro_zh": "英伟达创始人兼 CEO，被称为“算力之王”，通过 GPU 和 NVLink 架构推动全球 AI 基础设施革命，是整个 AI 工业化的基石人物。"
+    "intro_zh": "英伟达创始人兼 CEO，被称为“算力之王”，通过 GPU 和 NVLink 架构推动全球 AI 基础设施革命，是整个 AI 工业化的基石人物。",
+    "intro_en": "Founder and CEO of NVIDIA, known as the 'King of Compute', driving the global AI infrastructure revolution via GPU and NVLink architectures, a cornerstone of AI industrialization."
   },
   {
     "id": "nvidia",
@@ -97,7 +136,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@NVIDIA",
     "github": null,
     "podcast": null,
-    "intro_zh": "全球最大 AI 芯片与算力基础设施供应商，主导 GPU、NVSwitch、NVLink、CUDA 等核心生态，是 AI 时代最重要的底层公司之一。"
+    "intro_zh": "全球最大 AI 芯片与算力基础设施供应商，主导 GPU、NVSwitch、NVLink、CUDA 等核心生态，是 AI 时代最重要的底层公司之一。",
+    "intro_en": "The world's largest AI chip and compute infrastructure provider, dominating GPU, NVSwitch, NVLink, and CUDA ecosystems, one of the most important bottom-layer companies of the AI era."
   },
   {
     "id": "elon_musk",
@@ -111,7 +151,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": "https://www.youtube.com/@TeslaPodcastHighlights",
-    "intro_zh": "特斯拉、SpaceX、xAI 创始人，推动 Grok 模型和超大规模 GPU 集群建设，正通过能源、电动汽车、AI、太空建立多线斜率飞轮。"
+    "intro_zh": "特斯拉、SpaceX、xAI 创始人，推动 Grok 模型和超大规模 GPU 集群建设，正通过能源、电动汽车、AI、太空建立多线斜率飞轮。",
+    "intro_en": "Founder of Tesla, SpaceX, and xAI, driving Grok models and massive GPU clusters, building a multi-slope flywheel across energy, EVs, AI, and space."
   },
   {
     "id": "palantir",
@@ -125,7 +166,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@PalantirTech",
     "github": null,
     "podcast": null,
-    "intro_zh": "全球领先的政府与企业级 AI 平台供应商，以数据融合、Agent 驱动决策系统著称，是美国政府及盟友 AI 战略的核心企业之一。"
+    "intro_zh": "全球领先的政府与企业级 AI 平台供应商，以数据融合、Agent 驱动决策系统著称，是美国政府及盟友 AI 战略的核心企业之一。",
+    "intro_en": "Leading global government and enterprise AI platform provider, known for data fusion and Agent-driven decision systems, a core company in US and allied AI strategy."
   },
   {
     "id": "peter_thiel",
@@ -139,7 +181,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "硅谷最具影响力的思想家和投资人之一，Palantir 创始人，PayPal 黑帮核心人物，对科技、自由主义和国家安全有深刻影响。"
+    "intro_zh": "硅谷最具影响力的思想家和投资人之一，Palantir 创始人，PayPal 黑帮核心人物，对科技、自由主义和国家安全有深刻影响。",
+    "intro_en": "One of Silicon Valley's most influential thinkers and investors, Palantir founder, PayPal Mafia core member, with deep influence on tech, libertarianism, and national security."
   },
   {
     "id": "alex_karp",
@@ -153,7 +196,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@PalantirTech",
     "github": null,
     "podcast": null,
-    "intro_zh": "Palantir CEO，以独特的政治与哲学视角构建企业级 AI 和国防 AI 系统，是“AI 战略化”的关键推动者。"
+    "intro_zh": "Palantir CEO，以独特的政治与哲学视角构建企业级 AI 和国防 AI 系统，是“AI 战略化”的关键推动者。",
+    "intro_en": "Palantir CEO, building enterprise and defense AI with unique political and philosophical perspectives, a key driver of 'AI Strategicization'."
   },
   {
     "id": "anduril",
@@ -167,7 +211,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@andurilindustries",
     "github": null,
     "podcast": null,
-    "intro_zh": "美国最强 AI 国防科技公司，专注自主无人机、传感器网络、前线 AI 指挥系统，被视为未来战争的主要技术提供者。"
+    "intro_zh": "美国最强 AI 国防科技公司，专注自主无人机、传感器网络、前线 AI 指挥系统，被视为未来战争的主要技术提供者。",
+    "intro_en": "Top US AI defense tech company, focused on autonomous drones, sensor networks, and frontline AI command systems, seen as a major tech provider for future warfare."
   },
   {
     "id": "palmer_luckey",
@@ -181,7 +226,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "Anduril 创始人、Oculus 创始人，是全球最年轻且最有创造力的硬件与国防科技创新者之一。"
+    "intro_zh": "Anduril 创始人、Oculus 创始人，是全球最年轻且最有创造力的硬件与国防科技创新者之一。",
+    "intro_en": "Founder of Anduril and Oculus, one of the youngest and most creative hardware and defense tech innovators globally."
   },
   {
     "id": "trae_stephens",
@@ -195,7 +241,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "Anduril 联合创始人、Founders Fund 合伙人，专注政府技术、国防科技与战略级创新，是美国“AI 国防现代化”的关键人物。"
+    "intro_zh": "Anduril 联合创始人、Founders Fund 合伙人，专注政府技术、国防科技与战略级创新，是美国“AI 国防现代化”的关键人物。",
+    "intro_en": "Co-founder of Anduril, Partner at Founders Fund, focused on gov-tech, defense tech, and strategic innovation, a key figure in 'AI Defense Modernization'."
   },
   {
     "id": "cursor",
@@ -209,7 +256,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@cursor-ai",
     "github": null,
     "podcast": null,
-    "intro_zh": "AI 原生的软件开发环境（AI IDE），通过多代理协作、代码理解与自动补全提升软件开发效率，是下一代开发者工具的代表性公司之一。"
+    "intro_zh": "AI 原生的软件开发环境（AI IDE），通过多代理协作、代码理解与自动补全提升软件开发效率，是下一代开发者工具的代表性公司之一。",
+    "intro_en": "AI-native IDE improving development efficiency via multi-agent collaboration, code understanding, and auto-completion, representing the next generation of developer tools."
   },
   {
     "id": "cursor_founders",
@@ -223,7 +271,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "Cursor 的核心创始团队（Aidan Gomez, Ben Schmidt），来自深度学习与开发工具领域，目标是用多智能体系统重新定义软件开发体验。"
+    "intro_zh": "Cursor 的核心创始团队（Aidan Gomez, Ben Schmidt），来自深度学习与开发工具领域，目标是用多智能体系统重新定义软件开发体验。",
+    "intro_en": "Core founding team of Cursor (Aidan Gomez, Ben Schmidt), from deep learning and dev tools, aiming to redefine software development via multi-agent systems."
   },
   {
     "id": "spacex",
@@ -237,7 +286,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@SpaceX",
     "github": null,
     "podcast": null,
-    "intro_zh": "全球领先的航天科技公司，通过 Falcon 系列、Starship 和 Starlink 重塑全球空间基础设施，是美国太空与通信战略的核心力量之一。"
+    "intro_zh": "全球领先的航天科技公司，通过 Falcon 系列、Starship 和 Starlink 重塑全球空间基础设施，是美国太空与通信战略的核心力量之一。",
+    "intro_en": "Leading aerospace company reshaping global space infrastructure via Falcon, Starship, and Starlink, a core force in US space and communication strategy."
   },
   {
     "id": "databricks",
@@ -251,7 +301,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@databricks",
     "github": "https://github.com/databricks",
     "podcast": null,
-    "intro_zh": "全球领先的企业数据 + AI 平台公司，以 Lakehouse 架构和大规模分布式训练闻名，是企业级 AI 算力与数据基础设施核心公司。"
+    "intro_zh": "全球领先的企业数据 + AI 平台公司，以 Lakehouse 架构和大规模分布式训练闻名，是企业级 AI 算力与数据基础设施核心公司。",
+    "intro_en": "Leading enterprise Data + AI platform, known for Lakehouse architecture and massive distributed training, a core company for enterprise AI compute and data infra."
   },
   {
     "id": "ali_ghodsi",
@@ -265,7 +316,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "Databricks 联合创始人兼 CEO，Lakehouse 架构提出者，推动数据工程、模型训练和企业 AI 堆栈标准化。"
+    "intro_zh": "Databricks 联合创始人兼 CEO，Lakehouse 架构提出者，推动数据工程、模型训练和企业 AI 堆栈标准化。",
+    "intro_en": "Co-founder and CEO of Databricks, proponent of Lakehouse, driving standardization of data engineering, model training, and enterprise AI stacks."
   },
   {
     "id": "matei_zaharia",
@@ -279,7 +331,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": "https://github.com/mateiz",
     "podcast": null,
-    "intro_zh": "Databricks 联合创始人、Apache Spark 发明人，是分布式计算与 AI 数据系统领域的顶尖科学家。"
+    "intro_zh": "Databricks 联合创始人、Apache Spark 发明人，是分布式计算与 AI 数据系统领域的顶尖科学家。",
+    "intro_en": "Co-founder of Databricks, creator of Apache Spark, and a top scientist in distributed computing and AI data systems."
   },
   {
     "id": "david_cahn",
@@ -293,7 +346,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "a16z 最具锋芒的 AI 分析者之一，以极强的技术深度和趋势判断著称，其 AI 观点被广泛引用。"
+    "intro_zh": "a16z 最具锋芒的 AI 分析者之一，以极强的技术深度和趋势判断著称，其 AI 观点被广泛引用。",
+    "intro_en": "One of the sharpest AI analysts at a16z, known for technical depth and trend judgment, with widely cited AI views."
   },
   {
     "id": "naval",
@@ -307,7 +361,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@naval",
     "github": null,
     "podcast": "https://nav.al/podcast",
-    "intro_zh": "硅谷最有影响力的思想家之一，AngelList 创始人，以“如何致富”“清晰思维”等框架影响无数创业者和投资人。"
+    "intro_zh": "硅谷最有影响力的思想家之一，AngelList 创始人，以“如何致富”“清晰思维”等框架影响无数创业者和投资人。",
+    "intro_en": "Influential Silicon Valley thinker, AngelList founder, impacting countless founders and investors with 'How to Get Rich' and 'Clear Thinking' frameworks."
   },
   {
     "id": "brian_venturo",
@@ -321,7 +376,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "CoreWeave 联合创始人，专注构建高密度算力云和 GPU 数据中心，是美国 AI 算力版图中增长最快的企业领导者之一。"
+    "intro_zh": "CoreWeave 联合创始人，专注构建高密度算力云和 GPU 数据中心，是美国 AI 算力版图中增长最快的企业领导者之一。",
+    "intro_en": "Co-founder of CoreWeave, focused on building high-density compute clouds and GPU data centers, a leader in the fastest-growing US AI compute sector."
   },
   {
     "id": "coreweave",
@@ -335,7 +391,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "全球发展速度最快的 AI 专用云公司之一，提供 GPU 租赁、液冷集群和 AI 数据中心，被视为 OpenAI 和美国算力战略的重要支柱。"
+    "intro_zh": "全球发展速度最快的 AI 专用云公司之一，提供 GPU 租赁、液冷集群和 AI 数据中心，被视为 OpenAI 和美国算力战略的重要支柱。",
+    "intro_en": "One of the fastest-growing AI specialty clouds, providing GPU leasing, liquid-cooled clusters, and AI data centers, a key pillar for OpenAI and US compute strategy."
   },
   {
     "id": "nebius",
@@ -349,7 +406,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "由前 Yandex Cloud 团队打造的新一代欧洲算力提供商，主打高性价比 GPU 云和数据驻留合规，是欧盟 AI 基建的潜力新星。"
+    "intro_zh": "由前 Yandex Cloud 团队打造的新一代欧洲算力提供商，主打高性价比 GPU 云和数据驻留合规，是欧盟 AI 基建的潜力新星。",
+    "intro_en": "Next-gen European compute provider by the former Yandex Cloud team, offering cost-effective GPU cloud and data residency compliance, a rising star in EU AI infra."
   },
   {
     "id": "david_luan",
@@ -363,7 +421,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "Adept AI 联合创始人，通用操作模型（Action Model）概念提出者，自动化代理（Agent）领域的核心思想家之一。"
+    "intro_zh": "Adept AI 联合创始人，通用操作模型（Action Model）概念提出者，自动化代理（Agent）领域的核心思想家之一。",
+    "intro_en": "Co-founder of Adept AI, proposer of the Action Model concept, and a core thinker in the field of Automation Agents."
   },
   {
     "id": "adept_ai",
@@ -377,7 +436,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": "https://github.com/AdeptAI",
     "podcast": null,
-    "intro_zh": "全球最领先的 Agent 企业之一，专注“AI 操作电脑”的方向，推动自动化工具链革命和企业工作流重构。"
+    "intro_zh": "全球最领先的 Agent 企业之一，专注“AI 操作电脑”的方向，推动自动化工具链革命和企业工作流重构。",
+    "intro_en": "Leading Agent company focused on 'AI using computers', driving the automation toolchain revolution and enterprise workflow reconstruction."
   },
   {
     "id": "aravind_srinivas",
@@ -391,7 +451,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "Perplexity CEO，打造新一代 AI 搜索引擎，以检索增强生成（RAG）改写信息获取方式，是搜索领域最大的挑战者之一。"
+    "intro_zh": "Perplexity CEO，打造新一代 AI 搜索引擎，以检索增强生成（RAG）改写信息获取方式，是搜索领域最大的挑战者之一。",
+    "intro_en": "CEO of Perplexity, building a next-gen AI search engine, rewriting information access via RAG, and a major challenger in the search field."
   },
   {
     "id": "perplexity",
@@ -405,7 +466,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@perplexity_ai",
     "github": null,
     "podcast": null,
-    "intro_zh": "AI 搜索革命者，通过实时检索 + LLM 输出的模式颠覆传统搜索引擎，速度与信噪比领先整个行业。"
+    "intro_zh": "AI 搜索革命者，通过实时检索 + LLM 输出的模式颠覆传统搜索引擎，速度与信噪比领先整个行业。",
+    "intro_en": "AI search revolutionary, disrupting traditional search via real-time retrieval + LLM output, leading the industry in speed and signal-to-noise ratio."
   },
   {
     "id": "matt_shumer",
@@ -419,7 +481,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "HyperWrite 创始人，推动浏览器自动化代理（Browser Agent），展示 AI 如何自主操作网页与在线服务。"
+    "intro_zh": "HyperWrite 创始人，推动浏览器自动化代理（Browser Agent），展示 AI 如何自主操作网页与在线服务。",
+    "intro_en": "Founder of HyperWrite, driving Browser Agents, demonstrating how AI can autonomously operate web pages and online services."
   },
   {
     "id": "hyperwrite",
@@ -433,7 +496,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "自动化浏览器 AI 工具，通过多步骤网页操作展示未来 Agent 如何取代人工完成重复性在线任务。"
+    "intro_zh": "自动化浏览器 AI 工具，通过多步骤网页操作展示未来 Agent 如何取代人工完成重复性在线任务。",
+    "intro_en": "Automated browser AI tool, demonstrating how Agents will replace human repetitive online tasks via multi-step web operations."
   },
   {
     "id": "cognition_labs",
@@ -447,7 +511,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": "https://github.com/cognition-labs",
     "podcast": null,
-    "intro_zh": "推出全球首款 AI 软件工程师 Devin，可自主写代码、调试、运行和提交，是自动化开发的重大拐点。"
+    "intro_zh": "推出全球首款 AI 软件工程师 Devin，可自主写代码、调试、运行和提交，是自动化开发的重大拐点。",
+    "intro_en": "Launched Devin, the world's first AI software engineer capable of coding, debugging, running, and committing, a major turning point in automated development."
   },
   {
     "id": "soren_rewind",
@@ -461,7 +526,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "Rewind 联合创始人，推进“个人记忆系统”，让 AI 可存储、检索和理解个人全生命周期数据，是未来外脑形态的重要探索者。"
+    "intro_zh": "Rewind 联合创始人，推进“个人记忆系统”，让 AI 可存储、检索和理解个人全生命周期数据，是未来外脑形态的重要探索者。",
+    "intro_en": "Co-founder of Rewind, pushing 'Personal Memory Systems', letting AI store, retrieve, and understand personal lifecycle data, an explorer of future exocortex forms."
   },
   {
     "id": "rewind_ai",
@@ -475,7 +541,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "打造个人全记忆 AI，通过录屏、文本、对话构建用户时间轴，是“记忆型 AI 系统”最有前景的方向之一。"
+    "intro_zh": "打造个人全记忆 AI，通过录屏、文本、对话构建用户时间轴，是“记忆型 AI 系统”最有前景的方向之一。",
+    "intro_en": "Building personal full-memory AI, constructing user timelines via screen recording, text, and chat, one of the most promising directions for 'Memory AI' systems."
   },
   {
     "id": "ivan_zhao",
@@ -489,7 +556,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "Notion 创始人，推动“工作空间即操作系统”的理念，是 AI × 生产力工具领域最具影响力的设计者之一。"
+    "intro_zh": "Notion 创始人，推动“工作空间即操作系统”的理念，是 AI × 生产力工具领域最具影响力的设计者之一。",
+    "intro_en": "Founder of Notion, promoting the 'Workspace as OS' concept, one of the most influential designers in the AI × Productivity Tools field."
   },
   {
     "id": "notion",
@@ -503,7 +571,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@NotionHQ",
     "github": null,
     "podcast": null,
-    "intro_zh": "全球最受欢迎的知识管理与协作文档平台，AI 能力正在快速向“个人外脑操作系统”演进。"
+    "intro_zh": "全球最受欢迎的知识管理与协作文档平台，AI 能力正在快速向“个人外脑操作系统”演进。",
+    "intro_en": "The world's most popular knowledge management and collaboration platform, with AI capabilities rapidly evolving towards a 'Personal Exocortex OS'."
   },
   {
     "id": "mustafa_suleyman",
@@ -517,7 +586,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "DeepMind 联合创始人之一，曾领导其伦理研发，现负责微软用户级 AI 战略，是企业级 AI 方向的重要思想者。"
+    "intro_zh": "DeepMind 联合创始人之一，曾领导其伦理研发，现负责微软用户级 AI 战略，是企业级 AI 方向的重要思想者。",
+    "intro_en": "DeepMind co-founder who led ethics R&D, now leading Microsoft's consumer AI strategy, a key thinker in enterprise AI."
   },
   {
     "id": "gina_raimondo",
@@ -531,7 +601,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "美国商务部长，主导 GPU 出口管制、CHIPS 法案与 AI 产业政策，是科技地缘政治的关键制定者。"
+    "intro_zh": "美国商务部长，主导 GPU 出口管制、CHIPS 法案与 AI 产业政策，是科技地缘政治的关键制定者。",
+    "intro_en": "US Commerce Secretary, leading GPU export controls, the CHIPS Act, and AI industrial policy, a key policymaker in tech geopolitics."
   },
   {
     "id": "jake_sullivan",
@@ -545,7 +616,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "美国国家安全顾问，被认为是“AI 马歇尔计划”（Genesis Mission）背后的主要推动力量，负责全球 AI 布局与供应链安全框架。"
+    "intro_zh": "美国国家安全顾问，被认为是“AI 马歇尔计划”（Genesis Mission）背后的主要推动力量，负责全球 AI 布局与供应链安全框架。",
+    "intro_en": "US National Security Advisor, seen as the driving force behind the 'AI Marshall Plan' (Genesis Mission), responsible for global AI layout and supply chain security frameworks."
   },
   {
     "id": "mbs",
@@ -559,7 +631,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "沙特王储，通过 PIF 推动数百亿美元级别的 AI 和数据中心投资，将中东转变为“AI 新能源中心”。"
+    "intro_zh": "沙特王储，通过 PIF 推动数百亿美元级别的 AI 和数据中心投资，将中东转变为“AI 新能源中心”。",
+    "intro_en": "Crown Prince of Saudi Arabia, driving multi-billion AI and data center investments via PIF, transforming the Middle East into an 'AI New Energy Hub'."
   },
   {
     "id": "paul_graham",
@@ -573,7 +646,8 @@ export const ENTITIES: Entity[] = [
     "youtube": null,
     "github": null,
     "podcast": null,
-    "intro_zh": "硅谷最重要的思想家之一、Y Combinator 创始人，长期影响创业方向、产品哲学与技术趋势判断。"
+    "intro_zh": "硅谷最重要的思想家之一、Y Combinator 创始人，长期影响创业方向、产品哲学与技术趋势判断。",
+    "intro_en": "One of Silicon Valley's most important thinkers, Y Combinator founder, with long-term influence on startup directions, product philosophy, and tech trends."
   },
   {
     "id": "marc_andreessen",
@@ -587,7 +661,8 @@ export const ENTITIES: Entity[] = [
     "youtube": "https://www.youtube.com/@a16z",
     "github": null,
     "podcast": "https://a16z.com/podcasts/",
-    "intro_zh": "a16z 创始合伙人，硅谷最激进的技术乐观主义者之一，是 AI、加密、基础设施和生物科技投资的核心引领者。"
+    "intro_zh": "a16z 创始合伙人，硅谷最激进的技术乐观主义者之一，是 AI、加密、基础设施和生物科技投资的核心引领者。",
+    "intro_en": "Founding partner of a16z, a radical techno-optimist, and a leading investor in AI, crypto, infrastructure, and biotech."
   }
 ];
 
