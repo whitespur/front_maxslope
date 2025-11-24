@@ -82,77 +82,77 @@ export const TIMELINE_CHAPTERS: TimelineChapter[] = [
     title: "動物馴化與村落出現",
     description: "最早被馴化的動物包括：狗、羊、豬、牛等；村落結構：泥磚房屋、糧倉、牲畜圈、簡易灌溉系統；社會結構：氏族或家族為單位，共同勞動與防禦；農業 + 動物馴化共同構成早期文明的經濟基礎。",
     category: "civilization",
-    imageUrl: null
+    imageUrl: "https://storage.googleapis.com/aifun/taijiao_chapter_images/11/chapter_11_0.png"
   },
   {
     id: 12,
     title: "陶器、紡織與技術萌芽",
     description: "陶器技術出現後，人類可以儲存糧食、水和油，生活安全感提升；紡織技術使布料和衣物成為重要日常用品；出現更多專業工具：石鐮、石斧、磨盤、針等；手工藝逐漸發展出審美與裝飾意味，文化萌芽。",
     category: "civilization",
-    imageUrl: null
+    imageUrl: "https://storage.googleapis.com/aifun/taijiao_chapter_images/12/chapter_12_0.png"
   },
   {
     id: 13,
     title: "第一批城市出現",
     description: "公元前 3500 年左右，兩河流域出現世界上最早的城市，如烏魯克、烏爾；城市擁有城牆、神廟、宮殿和集市；統治者通過稅收、軍隊和行政機構管理城市及其周邊村落；城市成為文明擴散和創新的中心。",
     category: "civilization",
-    imageUrl: null
+    imageUrl: "https://storage.googleapis.com/aifun/taijiao_chapter_images/13/chapter_13_0.png"
   },
   {
     id: 14,
     title: "文字的出現",
     description: "公元前 3300 年左右，楔形文字在美索不達米亞出現，用於記錄稅收和貨物；古埃及發展出象形文字，用於宗教與王權記錄；後來中國有甲骨文，瑪雅有自己的文字系統；文字讓法律、宗教、歷史與行政管理可以跨地域和跨世代傳承。",
     category: "civilization",
-    imageUrl: null
+    imageUrl: "https://storage.googleapis.com/aifun/taijiao_chapter_images/14/chapter_14_0.png"
   },
   {
     id: 15,
     title: "兩河文明",
     description: "蘇美爾城邦是早期城市文明，巴比倫王國制定《漢謨拉比法典》，是世界最早成文法之一；數學和天文高度發達，採用六十進制，影響至今（如 60 分鐘、360 度）；對後世的法律、城市和宗教觀念具有深遠影響。",
     category: "civilization",
-    imageUrl: null
+    imageUrl: "https://storage.googleapis.com/aifun/taijiao_chapter_images/15/chapter_15_0.png"
   },
   {
     id: 16,
     title: "古埃及文明",
     description: "尼羅河定期泛濫帶來肥沃土壤，形成高度穩定的農業文明；古埃及發展出象形文字、木乃伊技術、金字塔建築和太陽曆法；社會等級分明但維持了數千年的連續性；紙草紙和部分知識被後世繼承。",
     category: "civilization",
-    imageUrl: null
+    imageUrl: "https://storage.googleapis.com/aifun/taijiao_chapter_images/16/chapter_16_0.png"
   },
   {
     id: 17,
     title: "印度河文明",
     description: "印度河文明中心：摩亨佐達羅、哈拉帕等城市；特點：城市規劃嚴格、排水系統先進、磚塊尺寸標準化；文字系統尚未完全破譯，宗教和政治結構仍在研究中；可能因氣候變化、河流改道等原因逐漸衰落。",
     category: "civilization",
-    imageUrl: null
+    imageUrl: "https://storage.googleapis.com/aifun/taijiao_chapter_images/17/chapter_17_0.png"
   },
   {
     id: 18,
     title: "中國早期文明",
     description: "仰韶文化彩陶著名；龍山文化黑陶細膩，社會分化加劇，出現城牆和大規模聚落；夏朝被視為中國最早的王朝；青銅器、祭祀制度與早期文字為後續商周奠定基礎。",
     category: "civilization",
-    imageUrl: null
+    imageUrl: "https://storage.googleapis.com/aifun/taijiao_chapter_images/18/chapter_18_0.png"
   },
   {
     id: 19,
     title: "西亞與波斯的崛起",
     description: "波斯帝國（阿契美尼德王朝）統一了廣大的西亞和中亞地區；創立行省制度、皇家大道和早期郵政系統；宗教：瑣羅亞斯德教強調善惡對立和最終審判；在軍事強力之外，也以相對寬容的民族政策著稱。",
     category: "civilization",
-    imageUrl: null
+    imageUrl: "https://storage.googleapis.com/aifun/taijiao_chapter_images/19/chapter_19_0.png"
   },
   {
     id: 20,
     title: "早期地中海文明",
     description: "邁錫尼文明：青銅時代的希臘文明，留下宮殿遺址與線性文字 B；腓尼基人是著名的海上商人和造船者；腓尼基字母是許多後世字母系統的祖先；地中海貿易網絡初步形成，為希臘和羅馬的興起鋪路。",
     category: "civilization",
-    imageUrl: null
+    imageUrl: "https://storage.googleapis.com/aifun/taijiao_chapter_images/20/chapter_20_0.png"
   },
   {
     id: 21,
     title: "軸心時代的思想覺醒",
     description: "軸心時代（約公元前 800–前 200 年）概念由哲學家雅斯貝爾斯提出；中國：孔子、老子等；印度：佛陀；希臘：蘇格拉底、柏拉圖等；不同地方的人們幾乎同時開始思考「什麼是善良」、「人要怎樣活」等根本問題。",
     category: "civilization",
-    imageUrl: null
+    imageUrl: "https://storage.googleapis.com/aifun/taijiao_chapter_images/21/chapter_21_0.png"
   },
   {
     id: 22,

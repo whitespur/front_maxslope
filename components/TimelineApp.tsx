@@ -31,7 +31,7 @@ const ThemeCard: React.FC<{
         <div className={`w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-lg transition-transform duration-300 group-hover:scale-110 ${colorClass}`}>
             {icon}
         </div>
-        <span className="font-mono text-3xl font-bold text-slate-500 group-hover:text-slate-300 transition-colors select-none">
+        <span className="font-mono text-3xl font-bold text-slate-400 group-hover:text-white transition-colors select-none opacity-80">
             {index}
         </span>
     </div>
@@ -131,6 +131,7 @@ const TimelineApp: React.FC<TimelineAppProps> = ({ onSwitchApp }) => {
                             alt={currentChapter.title} 
                             className="h-[400px] sm:h-[600px] max-w-none w-auto mx-auto object-contain bg-[#111] "
                             draggable={false}
+                            decoding="async"
                         />
                     </div>
                 ) : (
@@ -173,8 +174,7 @@ const TimelineApp: React.FC<TimelineAppProps> = ({ onSwitchApp }) => {
   // Main Dashboard View
   return (
     <div className="min-h-screen bg-[#020617] text-slate-200 font-sans selection:bg-blue-500/30 selection:text-blue-200 transition-colors duration-500">
-       {/* Background Noise/Gradient */}
-       <div className="fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 brightness-150 mix-blend-soft-light pointer-events-none"></div>
+       {/* Background Noise/Gradient - Optimized */}
        <div className="fixed top-0 left-0 w-full h-[800px] bg-gradient-to-b from-blue-900/10 via-purple-900/5 to-transparent pointer-events-none"></div>
 
        {/* Top Nav */}
@@ -201,7 +201,7 @@ const TimelineApp: React.FC<TimelineAppProps> = ({ onSwitchApp }) => {
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed font-light">
              40 個關鍵節點，跨越 138 億年的宏大敘事。<br className="hidden sm:block"/>
-             為下一代準備的胎教與科普指南。
+             一部獻給探索者的終極科普指南。
           </p>
           <button 
             onClick={() => { setSelectedCategory(null); scrollToChapters(); }}
@@ -293,6 +293,7 @@ const TimelineApp: React.FC<TimelineAppProps> = ({ onSwitchApp }) => {
                                 alt={chapter.title} 
                                 className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105" 
                                 loading="lazy"
+                                decoding="async"
                              />
                         ) : (
                             <div className="w-full h-full flex flex-col items-center justify-center bg-slate-900/50 text-slate-700 p-6 text-center">
@@ -336,7 +337,7 @@ const TimelineApp: React.FC<TimelineAppProps> = ({ onSwitchApp }) => {
 
       <footer className="py-12 border-t border-slate-800/50 text-center relative z-10 bg-[#020617]">
         <p className="text-slate-600 text-sm">
-            Designed for the next generation. © {new Date().getFullYear()}
+            Designed for curious minds. © {new Date().getFullYear()}
         </p>
       </footer>
     </div>
