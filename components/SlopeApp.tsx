@@ -45,7 +45,7 @@ const SlopeApp: React.FC<SlopeAppProps> = ({ onSwitchApp }) => {
             onClick={onSwitchApp}
             className="flex items-center gap-2 px-4 py-2 rounded-full bg-purple-900/40 border border-purple-700/50 backdrop-blur-md text-sm font-medium text-purple-200 hover:text-white hover:bg-purple-800/60 transition-all shadow-lg shadow-black/20"
         >
-            <span>Timeline</span>
+            <span>{lang === 'zh' ? '文明史' : 'Civilization'}</span>
         </button>
         <button 
             onClick={toggleLanguage}
